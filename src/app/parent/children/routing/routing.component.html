@@ -1,0 +1,10 @@
+<nav>
+    <li [routerLink]="[{outlets: {'childOutlet' : ['ca'] }}]">
+        Child A
+    </li>
+    <li [routerLink]="[{ outlets: { 'childOutlet' : ['cb'] }}]">
+        Child B
+    </li>
+</nav>
+
+<router-outlet name="childOutlet"></router-outlet>
